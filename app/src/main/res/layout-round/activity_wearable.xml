@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/main_layout"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto">
+
+
+    <com.devadvance.circularseekbar.CircularSeekBar
+        android:id="@+id/cirSeekGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:start_angle="180"
+        app:end_angle="0"
+        app:circle_x_radius="95dp"
+        app:circle_y_radius="95dp"
+        app:use_custom_radii="true"
+        app:progress="100"
+        app:max="180"
+        app:pointer_alpha_ontouch="100"
+        app:pointer_color="#900174DF"
+        app:pointer_halo_color="#290174DF"
+        app:circle_color="#00000000"
+        app:circle_progress_color="#400174DF"/>
+
+
+    <TextView
+        android:id="@+id/textViewRPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40sp"
+        android:fontFamily="@font/digital_clock"
+        android:textColor="@color/scaleColor"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <!-- TextView Temp -->
+    <TextView
+        android:id="@+id/textViewTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="22sp"
+        android:textColor="@color/debug_green"
+        android:fontFamily="@font/digital_7monoitalic"
+        android:layout_gravity="left"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="20dp"/>
+
+    <!-- TextView Voltage -->
+    <TextView
+        android:id="@+id/textViewVoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="22sp"
+        android:textColor="@color/debug_green"
+        android:fontFamily="@font/digital_7monoitalic"
+        android:layout_gravity="right"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <!-- TextView Encoder Position -->
+    <TextView
+        android:id="@+id/textViewEncoderPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/debug_green"
+        android:fontFamily="@font/digital_clock"
+        android:text="0"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-25dp"/>
+
+    <TextView
+        android:id="@+id/localEncoderPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/debug_green"
+        android:fontFamily="@font/digital_clock"
+        android:text="40"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="-8dp"/>
+
+    <TextView
+        android:id="@+id/textViewPing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="58dp"
+        android:textSize="17sp"
+        android:textColor="@color/debug_green"
+        android:fontFamily="@font/digital_7monoitalic"
+        android:text="0 ms" />
+
+
+    <uk.co.jackhurst.seven_segment_display.SevenSegmentView
+        android:id="@+id/segment_digits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="9dp"
+        app:digitSpacing="2dp"
+        app:digits="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:minDisplay="5"
+        app:offColor="@color/OffColor"
+        app:onColor="@color/debug_green"
+        app:segmentLength="9dp"
+        app:segmentThickness="2dp" />
+
+    <uk.co.jackhurst.seven_segment_display.SevenSegmentView
+        android:id="@+id/odd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="28dp"
+        app:digitSpacing="2dp"
+        app:digits="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:minDisplay="1"
+        app:offColor="@color/OffColor"
+        app:onColor="@color/debug_green"
+        app:segmentLength="9dp"
+        app:segmentThickness="2dp" />
+
+    <uk.co.jackhurst.seven_segment_display.SevenSegmentView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="30dp"
+        app:digitSpacing="2dp"
+        app:digits="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:minDisplay="2"
+        app:offColor="@color/OffColor"
+        app:onColor="@color/debug_green"
+        app:segmentLength="10dp"
+        app:segmentThickness="2dp" />
+
+    <uk.co.jackhurst.seven_segment_display.SevenSegmentView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="0dp"
+        app:digitSpacing="2dp"
+        app:digits="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:minDisplay="2"
+        app:offColor="@color/OffColor"
+        app:onColor="@color/debug_green"
+        app:segmentLength="10dp"
+        app:segmentThickness="2dp" />
+
+    <uk.co.jackhurst.seven_segment_display.SevenSegmentView
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="30dp"
+        app:digitSpacing="2dp"
+        app:digits="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:minDisplay="2"
+        app:offColor="@color/OffColor"
+        app:onColor="@color/debug_green"
+        app:segmentLength="10dp"
+        app:segmentThickness="2dp" />
+
+    <TextView
+        android:id="@+id/dot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="24sp"
+        android:textColor="@color/debug_green"
+        android:layout_gravity="center"
+        android:layout_marginLeft="14.8dp"
+        android:layout_marginTop="-52dp"/>
+
+    <TextView
+        android:id="@+id/dot3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="24sp"
+        android:textColor="@color/debug_green"
+        android:layout_gravity="center"
+        android:layout_marginRight="14.8dp"
+        android:layout_marginTop="-52dp"/>
+
+    <TextView
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textSize="24sp"
+        android:textColor="@color/debug_green"
+        android:layout_gravity="center"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="80dp"/>
+
+    <!-- TextView RPM -->
+    <de.nitri.gauge.Gauge
+        android:id="@+id/gauge"
+        android:layout_width="470px"
+        android:layout_height="470px"
+        android:layout_gravity="center"
+        gauge:startAngle="0"
+        gauge:needleLengthRatio="1.2"
+        gauge:labelTextSize="35"
+        gauge:initialValue="0"
+        gauge:maxValue="3000"
+        gauge:minValue="0"
+        gauge:totalNicks="120"
+        gauge:valuePerNick="50"
+        gauge:upperText=""
+        gauge:faceColor="@color/faceColor"
+        gauge:scaleColor="@color/scaleColor"
+        gauge:needleColor="@color/needleColor"/>
+
+    <ImageView
+        android:id="@+id/watertemp"
+        android:src="@drawable/watertemp"
+        android:scaleType="centerInside"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_gravity="center"
+        android:layout_marginRight="53dp"
+        android:layout_marginTop="38dp"/>
+
+    <de.nitri.gauge.GaugeCustom
+        android:id="@+id/gaugeTemp"
+        android:layout_width="470px"
+        android:layout_height="470px"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        gauge:startAngle="232"
+        gauge:needleStartAngle="119.4"
+        gauge:needleEndAngle="164.5"
+        gauge:needleLengthRatio="0.15"
+        gauge:needleShadow="true"
+        gauge:reverseNeedle="false"
+        gauge:labelTextSize="1"
+        gauge:initialValue="80"
+        gauge:maxValue="100"
+        gauge:minValue="0"
+        gauge:totalNicks="80"
+        gauge:valuePerNick="10"
+        gauge:upperTextOffsetX="0.25"
+        gauge:upperTextOffsetY="0.6"
+        gauge:faceColor="@color/faceColor"
+        gauge:scaleColor="@color/debug_red"
+        gauge:needleColor="@color/debug_green"/>
+
+    <ImageView
+        android:id="@+id/ic_batt"
+        android:src="@drawable/batt"
+        android:scaleType="centerInside"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"/>
+
+    <de.nitri.gauge.GaugeCustom
+        android:id="@+id/gaugeBatt"
+        android:layout_width="470px"
+        android:layout_height="470px"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        gauge:startAngle="130"
+        gauge:needleStartAngle="17.5"
+        gauge:needleEndAngle="62.5"
+        gauge:needleLengthRatio="0.15"
+        gauge:needleShadow="true"
+        gauge:reverseNeedle="true"
+        gauge:labelTextSize="1"
+        gauge:initialValue="0"
+        gauge:maxValue="15"
+        gauge:minValue="0"
+        gauge:totalNicks="80"
+        gauge:valuePerNick="1.5"
+        gauge:upperTextOffsetX="0.25"
+        gauge:upperTextOffsetY="0.6"
+        gauge:faceColor="@color/faceColor"
+        gauge:scaleColor="@color/debug_red"
+        gauge:reverseNeedleColorOrder="true" />
+
+
+
+
+
+<!--    &lt;!&ndash; SeekBar for En &ndash;&gt;-->
+<!--    <SeekBar-->
+<!--        android:id="@+id/seekBarEn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="160dp"/>-->
+
+    <!-- Button -->
+    <ImageButton
+        android:id="@+id/bStart"
+        android:src="@drawable/istart"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="0dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+    <ImageButton
+        android:id="@+id/buttonOpenSettings"
+        android:src="@drawable/isettings"
+        android:scaleType="centerInside"
+        android:layout_width="24px"
+        android:layout_height="24px"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:tint="@color/scaleColor"/>
+
+
+
+
+
+
+</androidx.wear.widget.BoxInsetLayout>

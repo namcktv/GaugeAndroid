@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="faceColor">#00000000</color> <!-- ARGB: 100% opaque -->
+    <color name="scaleColor">#FFFFFF</color> <!-- ARGB: 100% opaque -->
+    <color name="needleColor">#FF0101</color> <!-- ARGB: 100% opaque -->
+    <color name="background">#1F1F1F</color> <!-- ARGB: 100% opaque -->
+    <color name="OffColor">#012F01</color> <!-- ARGB: 100% opaque -->
+    <color name="debug_red">#FF0000</color>
+    <color name="debug_green">#00FF00</color>
+    <color name="debug_blue">#00F</color>
+    <color name="debug_yellow">#FFFF00</color>
+    <color name="debug_ORANGE">#FF6D00</color>
+    <color name="offwatertemp">#211414</color>
+    <color name="ButtonBackground">#3C3B3B</color>
+</resources>

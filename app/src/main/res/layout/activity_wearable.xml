@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/boxInsetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView android:id="@+id/textViewRPM" android:text="RPM:" android:textColor="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/textViewTemp" android:text="Temp:" android:textColor="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/textViewVoltage" android:text="Voltage:" android:textColor="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/textViewEncoderPosition" android:text="Encoder:" android:textColor="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+            <SeekBar
+                android:id="@+id/seekBarEn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"/>
+
+            <Button
+                android:id="@+id/buttonBt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toggle Bt" />
+
+            <EditText
+                android:id="@+id/editGT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="GT"
+                android:inputType="numberSigned|number" />
+
+            <EditText
+                android:id="@+id/editGC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="GC"
+                android:inputType="numberSigned|number" />
+
+            <EditText
+                android:id="@+id/editV1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="v0"
+                android:inputType="numberSigned|number" />
+
+            <EditText
+                android:id="@+id/editV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="v1"
+                android:inputType="numberSigned|number" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.wear.widget.BoxInsetLayout>

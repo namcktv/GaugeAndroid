@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Gauge">
+        <attr name="totalNicks" format="integer"/>
+        <attr name="valuePerNick" format="float"/>
+        <attr name="majorNickInterval" format="integer"/>
+        <attr name="minValue" format="float"/>
+        <attr name="maxValue" format="float"/>
+        <attr name="intScale" format="boolean"/>
+        <attr name="initialValue" format="float"/>
+        <attr name="labelTextSize" format="float"/>
+        <attr name="faceColor" format="integer"/>
+        <attr name="scaleColor" format="integer"/>
+        <attr name="needleShadow" format="boolean"/>
+        <attr name="needleColor" format="integer"/>
+        <attr name="textSize" format="float"/>
+        <attr name="upperText" format="string"/>
+        <attr name="lowerText" format="string"/>
+        <attr name="upperTextSize" format="float"/>
+        <attr name="lowerTextSize" format="float"/>
+        <attr name="startAngle" format="float" />
+        <attr name="endAngle" format="float" />
+        <attr name="needleLengthRatio" format="float" />
+        <attr name="needleStartAngle" format="float" />
+        <attr name="reverseNeedle" format="boolean" />
+        <attr name="needleEndAngle" format="float" />
+        <attr name="upperTextOffsetY" format="float" />
+        <attr name="upperTextOffsetX" format="float" />
+        <attr name="reverseNeedleColorOrder" format="boolean" />
+
+    </declare-styleable>
+    <declare-styleable name="CircularSeekBar">
+        <attr name="progress" format="integer"/>
+        <attr name="max" format="integer"/>
+        <attr name="move_outside_circle" format="boolean"/>
+        <attr name="maintain_equal_circle" format="boolean"/>
+        <attr name="use_custom_radii" format="boolean"/>
+        <attr name="lock_enabled" format="boolean"/>
+        <attr name="circle_x_radius" format="dimension"/>
+        <attr name="circle_y_radius" format="dimension"/>
+        <attr name="circle_stroke_width" format="dimension"/>
+        <attr name="pointer_radius" format="dimension"/>
+        <attr name="pointer_halo_width" format="dimension"/>
+        <attr name="pointer_halo_border_width" format="dimension"/>
+        <attr name="circle_color" format="color"/>
+        <attr name="circle_progress_color" format="color"/>
+        <attr name="pointer_color" format="color"/>
+        <attr name="pointer_halo_color" format="color"/>
+        <attr name="pointer_halo_color_ontouch" format="color"/>
+        <attr name="pointer_alpha_ontouch" format="integer"/>
+        <attr name="start_angle" format="float"/>
+        <attr name="end_angle" format="float"/>
+        <attr name="circle_fill" format="color"/>
+    </declare-styleable>
+</resources>

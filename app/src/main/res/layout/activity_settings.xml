@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/scaleColor"
+        android:text="Garantti" />
+
+    <EditText
+        android:id="@+id/editGT"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/scaleColor"
+        android:textColor="@color/scaleColor"
+        android:backgroundTint="@color/scaleColor"
+        android:hint="GT"
+        android:inputType="numberSigned|number" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/scaleColor"
+        android:text="Max Ga" />
+
+    <EditText
+        android:id="@+id/editGC"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/scaleColor"
+        android:textColor="@color/scaleColor"
+        android:backgroundTint="@color/scaleColor"
+        android:hint="GC"
+        android:inputType="numberSigned|number" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/scaleColor"
+        android:text="Current" />
+
+    <EditText
+        android:id="@+id/editV1"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/scaleColor"
+        android:textColor="@color/scaleColor"
+        android:backgroundTint="@color/scaleColor"
+        android:hint="Current"
+        android:inputType="numberSigned|number" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/scaleColor"
+        android:text="Delay" />
+
+    <EditText
+        android:id="@+id/editV2"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="@color/scaleColor"
+        android:textColor="@color/scaleColor"
+        android:backgroundTint="@color/scaleColor"
+        android:hint="Delay"
+        android:inputType="numberSigned|number" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/scaleColor"
+        android:background="@color/ButtonBackground"
+        android:text="Lưu" />
+</LinearLayout>
+    </ScrollView>
