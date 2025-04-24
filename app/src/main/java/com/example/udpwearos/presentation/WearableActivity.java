@@ -4,10 +4,15 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.provider.MediaStore;
 import android.util.Pair;
 import android.view.MotionEvent;
 import android.widget.*;
@@ -19,6 +24,8 @@ import de.nitri.gauge.GaugeCustom;
 import uk.co.jackhurst.seven_segment_display.SevenSegmentView;
 import com.example.udpwearos.R;
 import android.util.Log;
+
+import java.io.IOException;
 
 public class WearableActivity extends AppCompatActivity {
 
@@ -283,6 +290,8 @@ public class WearableActivity extends AppCompatActivity {
     private void sendDataInBackground(final String data) {
         new Thread(() -> udpClient.sendData(data)).start();
     }
+
+
 
 
 

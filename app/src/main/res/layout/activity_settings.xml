@@ -94,5 +94,16 @@
         android:textColor="@color/scaleColor"
         android:background="@color/ButtonBackground"
         android:text="Lưu" />
+    
+    <Button
+        android:id="@+id/buttonChangeBackground"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/scaleColor"
+        android:background="@color/ButtonBackground"
+        android:text="Chọn hình nền" />
+
 </LinearLayout>
     </ScrollView>
