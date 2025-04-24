@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-04-16T01:19:07.389578100Z">
+        <DropdownSelection timestamp="2025-04-24T13:24:31.656336500Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\KENT\.android\avd\Wear_OS_Large_Round.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\KENT\.android\avd\Galaxy_Watch_4_2.avd" />
             </handle>
           </Target>
         </DropdownSelection>

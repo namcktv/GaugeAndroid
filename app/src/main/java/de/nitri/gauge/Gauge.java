@@ -320,7 +320,7 @@ public class Gauge extends View {
         canvasCenterY = h / 2f;
         needleTailLength = canvasWidth / 12f;
         needleWidth = canvasWidth / 98f;
-        needleLength = (canvasWidth / 2f) * 0.8f;
+        needleLength = (canvasWidth / 2f) * 0.9f;
 
         needlePaint.setStrokeWidth(canvasWidth / 197f);
 
@@ -329,13 +329,13 @@ public class Gauge extends View {
 
         setNeedle();
 
-        rimRect = new RectF(canvasWidth * .05f, canvasHeight * .05f, canvasWidth * 0.95f, canvasHeight * 0.95f);
+        rimRect = new RectF(canvasWidth * .0f, canvasHeight * .0f, canvasWidth * 0.95f, canvasHeight * 0.95f);
         rimPaint.setShader(new LinearGradient(canvasWidth * 0.40f, canvasHeight * 0.0f, canvasWidth * 0.60f, canvasHeight * 1.0f,
                 Color.rgb(0xf0, 0xf5, 0xf0),
                 Color.rgb(0x30, 0x31, 0x30),
                 Shader.TileMode.CLAMP));
 
-        float rimSize = 0.02f * canvasWidth;
+        float rimSize = 0.01f * canvasWidth;
         faceRect = new RectF();
         faceRect.set(rimRect.left + rimSize, rimRect.top + rimSize,
                 rimRect.right - rimSize, rimRect.bottom - rimSize);
@@ -349,7 +349,7 @@ public class Gauge extends View {
         scalePaint.setTextSize(0.045f * canvasWidth);
         scalePaint.setTextScaleX(0.8f * canvasWidth);
 
-        float scalePosition = 0.015f * canvasWidth;
+        float scalePosition = 0.015f;
         scaleRect = new RectF();
         scaleRect.set(faceRect.left + scalePosition, faceRect.top + scalePosition,
                 faceRect.right - scalePosition, faceRect.bottom - scalePosition);

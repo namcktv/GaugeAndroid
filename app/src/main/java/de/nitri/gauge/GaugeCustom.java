@@ -396,7 +396,7 @@ private static final String TAG = GaugeCustom.class.getSimpleName();
         canvasCenterY = h / 2f;
         needleTailLength = canvasWidth / 12f;
         needleWidth = canvasWidth / 50f;
-        needleLength = (canvasWidth / 2f) * 0.8f; // maxLength cố định ở rìa
+        needleLength = (canvasWidth / 2f) * 0.9f; // maxLength cố định ở rìa
         //baseLength = needleLength * needleLengthRatio;
 
 
@@ -407,13 +407,13 @@ private static final String TAG = GaugeCustom.class.getSimpleName();
 
         setNeedle();
 
-        rimRect = new RectF(canvasWidth * .05f, canvasHeight * .05f, canvasWidth * 0.95f, canvasHeight * 0.95f);
+        rimRect = new RectF(canvasWidth * .0f, canvasHeight * .0f, canvasWidth * 0.95f, canvasHeight * 0.95f);
         rimPaint.setShader(new LinearGradient(canvasWidth * 0.40f, canvasHeight * 0.0f, canvasWidth * 0.60f, canvasHeight * 1.0f,
                 Color.rgb(0xf0, 0xf5, 0xf0),
                 Color.rgb(0x30, 0x31, 0x30),
                 Shader.TileMode.CLAMP));
 
-        float rimSize = 0.02f * canvasWidth;
+        float rimSize = 0.01f * canvasWidth;
         faceRect = new RectF();
         faceRect.set(rimRect.left + rimSize, rimRect.top + rimSize,
                 rimRect.right - rimSize, rimRect.bottom - rimSize);
@@ -427,7 +427,7 @@ private static final String TAG = GaugeCustom.class.getSimpleName();
         scalePaint.setTextSize(0.045f * canvasWidth);
         scalePaint.setTextScaleX(0.8f * canvasWidth);
 
-        float scalePosition = 0.015f * canvasWidth;
+        float scalePosition = 0.015f;
         scaleRect = new RectF();
         scaleRect.set(faceRect.left + scalePosition, faceRect.top + scalePosition,
                 faceRect.right - scalePosition, faceRect.bottom - scalePosition);
@@ -470,7 +470,7 @@ private static final String TAG = GaugeCustom.class.getSimpleName();
         needlePath.reset();
 
         // Needle cố định đầu ngoài tại rìa
-        float fullNeedleLength = (canvasWidth / 2f) * 0.8f;
+        float fullNeedleLength = (canvasWidth / 1.75f) * 0.8f;
         needleLength = fullNeedleLength;
 
         // Đầu trong sẽ nằm tại vị trí cách đầu ngoài một đoạn = ratio

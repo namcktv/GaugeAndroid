@@ -10,13 +10,11 @@
 
     <com.devadvance.circularseekbar.CircularSeekBar
         android:id="@+id/cirSeekGas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:start_angle="180"
         app:end_angle="0"
-        app:circle_x_radius="95dp"
-        app:circle_y_radius="95dp"
-        app:use_custom_radii="true"
+        app:use_custom_radii="false"
         app:progress="100"
         app:max="180"
         app:pointer_alpha_ontouch="100"
@@ -227,8 +225,8 @@
     <!-- TextView RPM -->
     <de.nitri.gauge.Gauge
         android:id="@+id/gauge"
-        android:layout_width="470px"
-        android:layout_height="470px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         gauge:startAngle="0"
         gauge:needleLengthRatio="1.2"
@@ -255,10 +253,9 @@
 
     <de.nitri.gauge.GaugeCustom
         android:id="@+id/gaugeTemp"
-        android:layout_width="470px"
-        android:layout_height="470px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginTop="0dp"
         gauge:startAngle="232"
         gauge:needleStartAngle="119.4"
         gauge:needleEndAngle="164.5"
@@ -289,10 +286,9 @@
 
     <de.nitri.gauge.GaugeCustom
         android:id="@+id/gaugeBatt"
-        android:layout_width="470px"
-        android:layout_height="470px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginTop="0dp"
         gauge:startAngle="130"
         gauge:needleStartAngle="17.5"
         gauge:needleEndAngle="62.5"
